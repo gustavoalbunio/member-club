@@ -1,0 +1,11 @@
+main {
+  display: grid;
+  grid-template-columns: 320px 568px;
+  gap: 1.5rem
+}
+
+main section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

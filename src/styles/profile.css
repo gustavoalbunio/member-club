@@ -1,0 +1,92 @@
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  background-color: var(--gray-100);
+  padding: 1rem;
+  border: 1px solid var(--gray-300);
+  border-radius: 16px;
+}
+
+.profile div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem
+}
+
+.profile div h1 {
+  font: var(--title-sm);
+  color: var(--gray-600);
+}
+
+.profile div span {
+  font: var(--text-xs);
+}
+
+.history {
+  background-color: var(--gray-100);
+  border: 1px solid var(--gray-300);
+  border-radius: 16px;
+
+  max-height: 360px;
+  overflow: scroll;
+}
+
+.history h3 {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 1.5rem 0;
+  border-bottom: 1px solid var(--gray-200);
+
+
+  font: var(--subtitle-sm);
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+
+  & span {
+    font: var(--text-xs);
+    text-transform: lowercase;
+  }
+}
+
+.history-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  padding: 0 1.5rem 1.5rem;
+
+  height: 100%;
+}
+
+.history-item {
+  padding-top: 0.75rem;
+  color: var(--gray-600);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & span {
+    color: var(--gray-500);
+  }
+}
+
+.history-item i {
+  font-size: 1.5rem;
+  color: var(--green);
+
+  background-color: rgba(69, 180, 66, 0.12);
+  padding: 0.25rem;
+  border-radius: 50%;
+}
+
+.history-item > div {
+  font: var(--subtitle-sm);
+}
+
+.history-item > div span {
+  font: var(--text-xs);
+  display: block;
+}
